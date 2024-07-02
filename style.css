@@ -1,0 +1,109 @@
+/* Keaton Sneed, CIS130, Responsive Travel, 6/30/24 */
+
+
+/*--Body--*/
+body{
+    text-align: center;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+    color:#2d2d2d;
+    padding:10px
+}
+p{
+    color:#575757;
+    padding:10px;
+    font-size: 1.2em;
+}
+
+div div{
+    background-color: #BFBFBF;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 16px;
+}
+img{
+    width:100%;
+    background-color: white;
+    border-radius: 16px;
+    margin-bottom: 5px;
+}
+.sect1 {
+    background-color: #BFBFBF;
+}
+.sect2{
+    background-color: #BFBFBF;
+}
+
+/*--Header--*/
+header{
+    background-color: #C86161;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1{
+    margin:0;
+    font-size: 32pt;
+    color: white;
+}
+
+/*Size changes*/
+@media screen and (min-width:740px) {
+    header{
+        border-radius: 24px;
+        margin: 10px;
+    }
+    p{
+        font-size: 1.0em;
+    }
+    div.img1{
+        width: 46%;
+        float: right;
+        margin-top: 5px;
+        margin-bottom:5px;
+    }
+    div.text1{
+        max-width:46%;
+        clear:none;
+        float:left;
+    }
+    div.sect1{
+        display: inline-block;
+    }
+    div.img2{
+        width:46%;
+        float:left;
+        margin-top: 5px;
+        margin-bottom:5px;
+    }
+    div.text2{
+        width:46%;
+        float:right;
+    }
+    div.sect2{
+        margin-top:20px;
+        display:inline-block;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    header{
+        clear:inherit;
+        max-width:600px;
+    }
+    div.sect1{
+        background-color: white;
+    }
+    div.img1{
+        width:50%;
+    }
+    div.sect2{
+        background-color: white;
+    }
+    div.img2{
+        width:50%;
+    }
+}
